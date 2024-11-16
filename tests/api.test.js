@@ -773,7 +773,6 @@ test.describe('API Challenge', () => {
    test('48 - 401 при попытке авторизоваться не-администратором /secret/token api', { tag: '@post' }, async ({ request }) => {
       let endpoint = 'secret/token';
       let authData = btoa('qa:guru');
-      console.log(authData);
       let response = await request.post(`${baseURL}${endpoint}`,
          {
             headers: {
@@ -788,7 +787,6 @@ test.describe('API Challenge', () => {
    test('49 - 201 при попытке авторизоваться администратором /secret/token api', { tag: '@post' }, async ({ request }) => {
       let endpoint = 'secret/token';
       let authData = btoa('admin:password');
-      console.log(authData);
       let response = await request.post(`${baseURL}${endpoint}`,
          {
             headers: {
