@@ -4,13 +4,17 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "debug": "npx playwright test --ui"
+    "debug": "npx playwright test --ui",
+    "posts": "npx playwright test --grep post",
+    "gets": "npx playwright test --grep get",
+    "heads": "npx playwright test --grep head"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@faker-js/faker": "^9.0.3",
     "@playwright/test": "^1.48.1",
     "@types/node": "^22.7.7"
   }
